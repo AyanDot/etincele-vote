@@ -1,0 +1,12 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // One doc per product (P001..P104), one field per person: "yes" or "no".
+    match /votes/{pid} {
+      allow read: if true;
+      allow create, update: if pid.matches('P[0-9]{3}')
+        && request.resource.data.keys().hasOnly(['Ali', 'Jibran', 'Ayan'])
+        && request.resource.data.values().hasOnly(['yes', 'no']);
+    }
+  }
+}
