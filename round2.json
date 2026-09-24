@@ -1,0 +1,25 @@
+{
+  "categories": [
+    { "key": "bangles", "name": "Bangles & cuffs", "quota": 10, "ids": ["P017","P020","P044","P045","P047","P048","P049","P050","P051","P052","P053","P054","P055","P056","P057","P059","P060","P079","P080","P081","P083","P087","P088","P091","P092","P093"] },
+    { "key": "bracelets", "name": "Bracelets", "quota": 8, "ids": ["P030","P034","P036","P040","P041","P046","P061","P064","P066","P074","P075","P078","P086","P089","P090","P097","P102"] },
+    { "key": "rings", "name": "Rings", "quota": 7, "ids": ["P001","P004","P008","P014","P016","P021","P022","P023","P024","P025","P026","P027","P058","P077"] },
+    { "key": "earrings", "name": "Earrings", "quota": 7, "ids": ["P005","P009","P010","P012","P015","P070","P071","P076","P084","P099"] },
+    { "key": "necklaces", "name": "Necklaces", "quota": 4, "ids": ["P013","P028","P032","P033","P042","P062","P063"] },
+    { "key": "evileye", "name": "Evil-eye sets", "quota": 1, "ids": ["P085","P101","P103"] },
+    { "key": "handchains", "name": "Hand chains", "quota": 2, "ids": ["P003","P019","P065","P069"] },
+    { "key": "anklet", "name": "Anklet", "quota": 1, "ids": ["P073"] }
+  ],
+  "notes": { "P081": "Bangle + ring set" },
+  "round1Split": ["P010","P013","P015","P022","P034","P036","P039","P041","P042","P055","P059","P065","P068","P069","P081","P084","P085","P090","P094","P097","P098","P099","P101"],
+  "setAside": [
+    { "id": "P037", "reason": "Supplier label says not stainless steel" },
+    { "id": "P038", "reason": "Supplier label says not stainless steel" },
+    { "id": "P039", "reason": "Supplier label says not stainless steel" },
+    { "id": "P068", "reason": "Supplier label says not stainless steel" },
+    { "id": "P082", "reason": "Engraved with \"Cartier\"" },
+    { "id": "P096", "reason": "Looks like the Tory Burch logo" },
+    { "id": "P002", "reason": "Same earrings as P009" },
+    { "id": "P094", "reason": "Same earrings as P084" },
+    { "id": "P098", "reason": "Same set as P085" }
+  ]
+}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Etincele Picks</title>
+  <title>Etincele Vote</title>
   <meta name="theme-color" content="#f6f1e9">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%23b8893b' stroke-width='4'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
   <!-- Name picker -->
   <section id="who" class="who-screen" hidden>
     <div class="brand">Etincele <span>Jewels</span></div>
-    <p class="lead">Round 2 · Who's picking?</p>
+    <p class="lead">Who's voting?</p>
     <div class="names">
       <button data-name="Ali">Ali</button>
       <button data-name="Jibran">Jibran</button>
@@ -27,9 +27,9 @@
   <!-- Main app -->
   <section id="main" class="main" hidden>
     <header class="top">
-      <div class="brand small">Etincele <em class="round">R2</em></div>
+      <div class="brand small">Etincele</div>
       <nav class="tabs" role="tablist">
-        <button data-tab="pick" class="on">Pick</button>
+        <button data-tab="vote" class="on">Vote</button>
         <button data-tab="results">Results</button>
       </nav>
       <button id="me" class="me" title="Switch person"></button>
@@ -37,38 +37,50 @@
 
     <div id="banner" class="banner" hidden></div>
 
-    <!-- Pick view -->
-    <div id="view-pick" class="view pick">
-      <div class="cats" id="cats"></div>
-      <p class="brief" id="brief"></p>
-      <div class="pgrid" id="pgrid"></div>
-      <div class="pickbar">
-        <div class="pickbar-text">
-          <strong id="usedText"></strong>
-          <span class="sync" id="sync"></span>
+    <!-- Vote view -->
+    <div id="view-vote" class="view vote">
+      <div class="progress">
+        <div class="bar"><i id="bar"></i></div>
+        <span id="progressText"></span>
+        <span id="sync" class="sync"></span>
+      </div>
+
+      <div class="stage" id="stage">
+        <img id="photo" alt="">
+        <button class="nav prev" id="prev" aria-label="Previous">&#8249;</button>
+        <button class="nav next" id="next" aria-label="Next">&#8250;</button>
+      </div>
+
+      <div class="meta">
+        <div class="idrow">
+          <strong id="pid"></strong>
+          <span id="pos" class="pos"></span>
+          <span id="status" class="status"></span>
         </div>
-        <button id="nextCat" class="nextcat"></button>
+        <div class="chips" id="chips"></div>
+      </div>
+
+      <div class="actions">
+        <button class="vbtn no" id="btnNo"><span>&#10005;</span> No</button>
+        <button class="vbtn yes" id="btnYes"><span>&#10003;</span> Yes</button>
       </div>
     </div>
 
     <!-- Results view -->
-    <div id="view-results" class="view r2results" hidden>
-      <div class="people" id="people"></div>
-      <div class="overall" id="overall"></div>
-      <p class="rule">In = picked by 2+ people, best first, up to each category's spots. Ties are broken by Round 1 (3/3 beats 2–1); anything still level is marked <b>Tie</b> for you to discuss.</p>
-      <button id="copy" class="copy wide">Copy final list</button>
-      <div id="standings"></div>
-      <details class="aside">
-        <summary id="asideTitle"></summary>
-        <div id="asideList"></div>
-      </details>
-      <a class="r1link" href="round1.html">Round 1 votes →</a>
+    <div id="view-results" class="view results" hidden>
+      <div class="summary" id="summary"></div>
+      <div class="tools">
+        <label class="toggle"><input type="checkbox" id="onlyMine"> Only ones I haven't voted on</label>
+        <button id="copy" class="copy">Copy list</button>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden>Nothing here.</p>
     </div>
   </section>
 
   <div id="zoom" class="zoom" hidden><img alt=""></div>
   <div id="toast" class="toast" hidden></div>
 
-  <script type="module" src="round2.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
