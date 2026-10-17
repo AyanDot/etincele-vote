@@ -1,4 +1,4 @@
-"""Regenerate firestore.rules from round2.json (run after changing categories or quotas)."""
+"""Regenerate firestore.rules from round2.json and batch2.json (run after changing either)."""
 import json
 from pathlib import Path
 
@@ -10,6 +10,7 @@ checks = "\n".join(
     f"        && catOk(d, '{c['key']}', {c['quota']}, {json.dumps(c['ids'])})" for c in cats
 )
 keys = json.dumps([c["key"] for c in cats])
+batch2_ids = json.dumps([p["id"] for p in json.loads((here / "batch2.json").read_text())["products"]])
 
 rules = f"""rules_version = '2';
 service cloud.firestore {{
@@ -18,6 +19,14 @@ service cloud.firestore {{
     match /votes/{{pid}} {{
       allow read: if true;
       allow create, update: if pid.matches('P[0-9]{{3}}')
+        && request.resource.data.keys().hasOnly(['Ali', 'Jibran', 'Ayan'])
+        && request.resource.data.values().hasOnly(['yes', 'no']);
+    }}
+
+    // Round 1 of the second batch: same shape as /votes, limited to the products in batch2.json.
+    match /votes2/{{pid}} {{
+      allow read: if true;
+      allow create, update: if pid in {batch2_ids}
         && request.resource.data.keys().hasOnly(['Ali', 'Jibran', 'Ayan'])
         && request.resource.data.values().hasOnly(['yes', 'no']);
     }}

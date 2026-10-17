@@ -14,9 +14,25 @@ const firebaseConfig = {
 
 const PEOPLE = ["Ali", "Jibran", "Ayan"];
 const SHORT = { Ali: "Al", Jibran: "Ji", Ayan: "Ay" };
-const COUNT = 104;
-const IDS = Array.from({ length: COUNT }, (_, i) => "P" + String(i + 1).padStart(3, "0"));
-const imgSrc = (id) => `images/${id}.jpg`;
+const CAT_NAMES = {
+  rings: "Rings", bangles: "Bangles & cuffs", bracelets: "Bracelets", earrings: "Earrings",
+  necklaces: "Necklaces", anklets: "Anklets", handchains: "Hand chains",
+};
+
+// The page says which vote it runs: <body data-votes="votes2" data-products="batch2.json">.
+// Without data-products it's the original P001–P104 vote, one photo per product.
+const { votes: VOTES = "votes", products: PRODUCTS_URL } = document.body.dataset;
+const PRODUCTS = PRODUCTS_URL
+  ? (await (await fetch(PRODUCTS_URL)).json()).products
+  : Array.from({ length: 104 }, (_, i) => {
+      const id = "P" + String(i + 1).padStart(3, "0");
+      return { id, photos: [id] };
+    });
+const IDS = PRODUCTS.map((p) => p.id);
+const BY_ID = Object.fromEntries(PRODUCTS.map((p) => [p.id, p]));
+const COUNT = IDS.length;
+const imgSrc = (photo) => `${photo.startsWith("N") ? "images2" : "images"}/${photo}.jpg`;
+const cover = (id) => imgSrc(BY_ID[id].photos[0]);
 
 const db = getFirestore(initializeApp(firebaseConfig));
 
@@ -24,6 +40,7 @@ const db = getFirestore(initializeApp(firebaseConfig));
 const votes = {};
 let me = load("me");
 let idx = 0;
+let photoIdx = 0;
 let loaded = false;
 let positioned = false;
 let filter = "waiting";
@@ -55,9 +72,21 @@ function nextUnvoted(from) {
   return null;
 }
 
+// A link like …/#N176 opens that product directly (handy for sharing in chat).
+function openFromHash() {
+  const j = IDS.indexOf(decodeURIComponent(location.hash.slice(1)).toUpperCase());
+  if (j < 0) return false;
+  idx = j;
+  photoIdx = 0;
+  return true;
+}
+const openedFromLink = openFromHash();
+window.addEventListener("hashchange", () => { if (openFromHash()) setTab("vote"); });
+
 function positionAtFirstUnvoted() {
   if (positioned || !loaded || !me) return;
   positioned = true;
+  if (openedFromLink) return;
   const j = nextUnvoted(COUNT - 1);
   if (j !== null) idx = j;
 }
@@ -103,17 +132,33 @@ function renderVote() {
   const v = votes[id] || {};
   const { status } = tally(id);
 
+  const product = BY_ID[id];
+  const shown = product.photos[photoIdx];
   const photo = $("#photo");
-  if (photo.dataset.id !== id) {
-    photo.dataset.id = id;
+  if (photo.dataset.photo !== shown) {
+    photo.dataset.photo = shown;
     photo.classList.add("loading");
-    photo.src = imgSrc(id);
+    photo.src = imgSrc(shown);
     // warm up neighbours so swiping feels instant
-    [idx + 1, idx - 1].forEach((j) => { if (j >= 0 && j < COUNT) new Image().src = imgSrc(IDS[j]); });
+    [idx + 1, idx - 1].forEach((j) => { if (j >= 0 && j < COUNT) new Image().src = cover(IDS[j]); });
   }
 
+  // Some products have several photos (angles, colours); show them as a thumbnail strip.
+  const thumbs = $("#thumbs");
+  thumbs.hidden = product.photos.length < 2;
+  thumbs.innerHTML = product.photos.length < 2 ? "" : product.photos.map((ph, i) =>
+    `<button data-photo="${i}" class="${i === photoIdx ? "on" : ""}" aria-label="Photo ${i + 1}"><img src="${imgSrc(ph)}" alt=""></button>`
+  ).join("");
+
   $("#pid").textContent = id;
-  $("#pos").textContent = `${idx + 1} of ${COUNT}`;
+  if (product.cat) {
+    const inCat = IDS.filter((x) => BY_ID[x].cat === product.cat);
+    $("#pos").textContent = `${CAT_NAMES[product.cat]} · ${inCat.indexOf(id) + 1} of ${inCat.length}`;
+  } else {
+    $("#pos").textContent = `${idx + 1} of ${COUNT}`;
+  }
+  $("#note").textContent = product.note || "";
+  $("#note").hidden = !product.note;
   $("#status").innerHTML = loaded ? `<span class="pill ${status}">${LABEL[status]}</span>` : "";
 
   $("#chips").innerHTML = PEOPLE.map((p) => {
@@ -149,7 +194,7 @@ function renderResults() {
     const v = votes[id] || {};
     const dots = PEOPLE.map((p) => `<i class="${v[p] || ""}" title="${p}">${SHORT[p]}</i>`).join("");
     return `<button class="tile" data-id="${id}">
-      <img loading="lazy" src="${imgSrc(id)}" alt="${id}">
+      <img loading="lazy" src="${cover(id)}" alt="${id}">
       <span class="tmeta"><span class="tid">${id}</span><span class="dots">${dots}</span></span>
     </button>`;
   }).join("");
@@ -168,7 +213,7 @@ async function cast(val) {
   const prev = myVote(id);
   const undo = prev === val;
   // Snapshot listener fires immediately with the local write, so the UI updates on its own.
-  const write = setDoc(doc(db, "votes", id), { [me]: undo ? deleteField() : val }, { merge: true })
+  const write = setDoc(doc(db, VOTES, id), { [me]: undo ? deleteField() : val }, { merge: true })
     .catch((e) => { banner(`Couldn't save your vote: ${e.message}`); return "failed"; });
   // don't block auto-advance on slow networks
   const result = await Promise.race([write, new Promise((r) => setTimeout(r, 400))]);
@@ -184,6 +229,7 @@ async function cast(val) {
 
 function go(j) {
   idx = (j + COUNT) % COUNT;
+  photoIdx = 0;
   renderVote();
 }
 
@@ -243,10 +289,16 @@ stage.addEventListener("touchend", (e) => {
 stage.addEventListener("click", (e) => {
   if (e.target.closest(".nav")) return;
   const z = $("#zoom");
-  z.querySelector("img").src = imgSrc(IDS[idx]);
+  z.querySelector("img").src = imgSrc(BY_ID[IDS[idx]].photos[photoIdx]);
   z.hidden = false;
 });
 $("#zoom").addEventListener("click", () => ($("#zoom").hidden = true));
+$("#thumbs").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-photo]");
+  if (!b) return;
+  photoIdx = Number(b.dataset.photo);
+  renderVote();
+});
 
 $("#summary").addEventListener("click", (e) => {
   const b = e.target.closest("[data-filter]");
@@ -260,6 +312,7 @@ $("#grid").addEventListener("click", (e) => {
   const tile = e.target.closest(".tile");
   if (!tile) return;
   idx = IDS.indexOf(tile.dataset.id);
+  photoIdx = 0;
   setTab("vote");
 });
 
@@ -287,7 +340,7 @@ const offlineWarning = setTimeout(() => {
 }, 10000);
 
 onSnapshot(
-  collection(db, "votes"),
+  collection(db, VOTES),
   { includeMetadataChanges: true },
   (snap) => {
     snap.docChanges().forEach((c) => {

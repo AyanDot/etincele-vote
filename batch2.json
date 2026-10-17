@@ -1,0 +1,1364 @@
+{
+ "products": [
+  {
+   "id": "N001",
+   "cat": "rings",
+   "photos": [
+    "N001"
+   ]
+  },
+  {
+   "id": "N002",
+   "cat": "rings",
+   "photos": [
+    "N002"
+   ]
+  },
+  {
+   "id": "N003",
+   "cat": "rings",
+   "photos": [
+    "N003"
+   ]
+  },
+  {
+   "id": "N004",
+   "cat": "rings",
+   "photos": [
+    "N004"
+   ]
+  },
+  {
+   "id": "N005",
+   "cat": "rings",
+   "photos": [
+    "N005"
+   ]
+  },
+  {
+   "id": "N006",
+   "cat": "rings",
+   "photos": [
+    "N006"
+   ]
+  },
+  {
+   "id": "N007",
+   "cat": "rings",
+   "photos": [
+    "N007"
+   ]
+  },
+  {
+   "id": "N008",
+   "cat": "rings",
+   "photos": [
+    "N008"
+   ]
+  },
+  {
+   "id": "N009",
+   "cat": "rings",
+   "photos": [
+    "N009"
+   ]
+  },
+  {
+   "id": "N010",
+   "cat": "rings",
+   "photos": [
+    "N010",
+    "N011"
+   ]
+  },
+  {
+   "id": "N012",
+   "cat": "rings",
+   "photos": [
+    "N012"
+   ]
+  },
+  {
+   "id": "N013",
+   "cat": "rings",
+   "photos": [
+    "N013"
+   ]
+  },
+  {
+   "id": "N108",
+   "cat": "rings",
+   "photos": [
+    "N108"
+   ]
+  },
+  {
+   "id": "N110",
+   "cat": "rings",
+   "photos": [
+    "N110"
+   ]
+  },
+  {
+   "id": "N111",
+   "cat": "rings",
+   "photos": [
+    "N111"
+   ]
+  },
+  {
+   "id": "N112",
+   "cat": "rings",
+   "photos": [
+    "N112"
+   ]
+  },
+  {
+   "id": "N113",
+   "cat": "rings",
+   "photos": [
+    "N113"
+   ]
+  },
+  {
+   "id": "N114",
+   "cat": "rings",
+   "photos": [
+    "N114",
+    "N115"
+   ]
+  },
+  {
+   "id": "N116",
+   "cat": "rings",
+   "photos": [
+    "N116"
+   ]
+  },
+  {
+   "id": "N117",
+   "cat": "rings",
+   "photos": [
+    "N117"
+   ]
+  },
+  {
+   "id": "N118",
+   "cat": "rings",
+   "photos": [
+    "N118"
+   ]
+  },
+  {
+   "id": "N119",
+   "cat": "rings",
+   "photos": [
+    "N119"
+   ]
+  },
+  {
+   "id": "N120",
+   "cat": "rings",
+   "photos": [
+    "N120"
+   ]
+  },
+  {
+   "id": "N121",
+   "cat": "rings",
+   "photos": [
+    "N121"
+   ]
+  },
+  {
+   "id": "N122",
+   "cat": "rings",
+   "photos": [
+    "N122"
+   ]
+  },
+  {
+   "id": "N123",
+   "cat": "rings",
+   "photos": [
+    "N123"
+   ]
+  },
+  {
+   "id": "N124",
+   "cat": "rings",
+   "photos": [
+    "N124"
+   ]
+  },
+  {
+   "id": "N125",
+   "cat": "rings",
+   "photos": [
+    "N125"
+   ]
+  },
+  {
+   "id": "N126",
+   "cat": "rings",
+   "photos": [
+    "N126"
+   ]
+  },
+  {
+   "id": "N127",
+   "cat": "rings",
+   "photos": [
+    "N127"
+   ]
+  },
+  {
+   "id": "N128",
+   "cat": "rings",
+   "photos": [
+    "N128"
+   ]
+  },
+  {
+   "id": "N129",
+   "cat": "rings",
+   "photos": [
+    "N129"
+   ]
+  },
+  {
+   "id": "N130",
+   "cat": "rings",
+   "photos": [
+    "N130"
+   ]
+  },
+  {
+   "id": "N131",
+   "cat": "rings",
+   "photos": [
+    "N131"
+   ]
+  },
+  {
+   "id": "N132",
+   "cat": "rings",
+   "photos": [
+    "N132"
+   ]
+  },
+  {
+   "id": "N133",
+   "cat": "rings",
+   "photos": [
+    "N133"
+   ]
+  },
+  {
+   "id": "N134",
+   "cat": "rings",
+   "photos": [
+    "N134"
+   ]
+  },
+  {
+   "id": "N135",
+   "cat": "rings",
+   "photos": [
+    "N135"
+   ]
+  },
+  {
+   "id": "N136",
+   "cat": "rings",
+   "photos": [
+    "N136"
+   ]
+  },
+  {
+   "id": "N139",
+   "cat": "rings",
+   "photos": [
+    "N139"
+   ]
+  },
+  {
+   "id": "N145",
+   "cat": "rings",
+   "photos": [
+    "N145"
+   ]
+  },
+  {
+   "id": "N152",
+   "cat": "rings",
+   "photos": [
+    "N152"
+   ]
+  },
+  {
+   "id": "N154",
+   "cat": "rings",
+   "photos": [
+    "N154"
+   ]
+  },
+  {
+   "id": "N160",
+   "cat": "rings",
+   "photos": [
+    "N160"
+   ]
+  },
+  {
+   "id": "N167",
+   "cat": "rings",
+   "photos": [
+    "N167",
+    "N168"
+   ]
+  },
+  {
+   "id": "N169",
+   "cat": "rings",
+   "photos": [
+    "N169"
+   ]
+  },
+  {
+   "id": "N179",
+   "cat": "rings",
+   "photos": [
+    "N179"
+   ]
+  },
+  {
+   "id": "N206",
+   "cat": "rings",
+   "photos": [
+    "N206",
+    "N207",
+    "N209"
+   ]
+  },
+  {
+   "id": "N208",
+   "cat": "rings",
+   "photos": [
+    "N208"
+   ]
+  },
+  {
+   "id": "N249",
+   "cat": "rings",
+   "photos": [
+    "N249",
+    "N251",
+    "N252"
+   ]
+  },
+  {
+   "id": "N250",
+   "cat": "rings",
+   "photos": [
+    "N250"
+   ]
+  },
+  {
+   "id": "N014",
+   "cat": "bangles",
+   "photos": [
+    "N014"
+   ]
+  },
+  {
+   "id": "N015",
+   "cat": "bangles",
+   "photos": [
+    "N015"
+   ]
+  },
+  {
+   "id": "N016",
+   "cat": "bangles",
+   "photos": [
+    "N016"
+   ]
+  },
+  {
+   "id": "N017",
+   "cat": "bangles",
+   "photos": [
+    "N017"
+   ],
+   "note": "Shows Cartier name"
+  },
+  {
+   "id": "N018",
+   "cat": "bangles",
+   "photos": [
+    "N018"
+   ]
+  },
+  {
+   "id": "N019",
+   "cat": "bangles",
+   "photos": [
+    "N019"
+   ],
+   "note": "Spells Louis Vuitton"
+  },
+  {
+   "id": "N020",
+   "cat": "bangles",
+   "photos": [
+    "N020"
+   ]
+  },
+  {
+   "id": "N021",
+   "cat": "bangles",
+   "photos": [
+    "N021"
+   ]
+  },
+  {
+   "id": "N022",
+   "cat": "bangles",
+   "photos": [
+    "N022"
+   ]
+  },
+  {
+   "id": "N023",
+   "cat": "bangles",
+   "photos": [
+    "N023"
+   ]
+  },
+  {
+   "id": "N024",
+   "cat": "bangles",
+   "photos": [
+    "N024"
+   ]
+  },
+  {
+   "id": "N025",
+   "cat": "bangles",
+   "photos": [
+    "N025"
+   ],
+   "note": "Rolex logo"
+  },
+  {
+   "id": "N157",
+   "cat": "bangles",
+   "photos": [
+    "N157"
+   ]
+  },
+  {
+   "id": "N183",
+   "cat": "bangles",
+   "photos": [
+    "N183",
+    "N219"
+   ]
+  },
+  {
+   "id": "N213",
+   "cat": "bangles",
+   "photos": [
+    "N213"
+   ]
+  },
+  {
+   "id": "N214",
+   "cat": "bangles",
+   "photos": [
+    "N214"
+   ]
+  },
+  {
+   "id": "N218",
+   "cat": "bangles",
+   "photos": [
+    "N218",
+    "N220"
+   ]
+  },
+  {
+   "id": "N224",
+   "cat": "bangles",
+   "photos": [
+    "N224",
+    "N226",
+    "N227",
+    "N228"
+   ]
+  },
+  {
+   "id": "N255",
+   "cat": "bangles",
+   "photos": [
+    "N255"
+   ],
+   "note": "Several bangles in one photo"
+  },
+  {
+   "id": "N033",
+   "cat": "bracelets",
+   "photos": [
+    "N033"
+   ]
+  },
+  {
+   "id": "N034",
+   "cat": "bracelets",
+   "photos": [
+    "N034"
+   ]
+  },
+  {
+   "id": "N035",
+   "cat": "bracelets",
+   "photos": [
+    "N035"
+   ]
+  },
+  {
+   "id": "N036",
+   "cat": "bracelets",
+   "photos": [
+    "N036"
+   ]
+  },
+  {
+   "id": "N037",
+   "cat": "bracelets",
+   "photos": [
+    "N037"
+   ],
+   "note": "Herm\u00e8s/Dior-style charms"
+  },
+  {
+   "id": "N038",
+   "cat": "bracelets",
+   "photos": [
+    "N038"
+   ]
+  },
+  {
+   "id": "N039",
+   "cat": "bracelets",
+   "photos": [
+    "N039"
+   ]
+  },
+  {
+   "id": "N040",
+   "cat": "bracelets",
+   "photos": [
+    "N040"
+   ]
+  },
+  {
+   "id": "N041",
+   "cat": "bracelets",
+   "photos": [
+    "N041"
+   ]
+  },
+  {
+   "id": "N042",
+   "cat": "bracelets",
+   "photos": [
+    "N042"
+   ]
+  },
+  {
+   "id": "N043",
+   "cat": "bracelets",
+   "photos": [
+    "N043"
+   ]
+  },
+  {
+   "id": "N044",
+   "cat": "bracelets",
+   "photos": [
+    "N044"
+   ]
+  },
+  {
+   "id": "N045",
+   "cat": "bracelets",
+   "photos": [
+    "N045"
+   ],
+   "note": "Louis Vuitton monogram"
+  },
+  {
+   "id": "N172",
+   "cat": "bracelets",
+   "photos": [
+    "N172",
+    "N199"
+   ]
+  },
+  {
+   "id": "N173",
+   "cat": "bracelets",
+   "photos": [
+    "N173",
+    "N200"
+   ]
+  },
+  {
+   "id": "N176",
+   "cat": "bracelets",
+   "photos": [
+    "N176",
+    "N175",
+    "N178",
+    "N201",
+    "N202",
+    "N203",
+    "N205"
+   ]
+  },
+  {
+   "id": "N177",
+   "cat": "bracelets",
+   "photos": [
+    "N177",
+    "N198"
+   ]
+  },
+  {
+   "id": "N204",
+   "cat": "bracelets",
+   "photos": [
+    "N204"
+   ]
+  },
+  {
+   "id": "N232",
+   "cat": "bracelets",
+   "photos": [
+    "N232",
+    "N234"
+   ]
+  },
+  {
+   "id": "N235",
+   "cat": "bracelets",
+   "photos": [
+    "N235"
+   ]
+  },
+  {
+   "id": "N238",
+   "cat": "bracelets",
+   "photos": [
+    "N238",
+    "N239",
+    "N240"
+   ]
+  },
+  {
+   "id": "N241",
+   "cat": "bracelets",
+   "photos": [
+    "N241",
+    "N244"
+   ]
+  },
+  {
+   "id": "N242",
+   "cat": "bracelets",
+   "photos": [
+    "N242"
+   ]
+  },
+  {
+   "id": "N245",
+   "cat": "bracelets",
+   "photos": [
+    "N245"
+   ]
+  },
+  {
+   "id": "N170",
+   "cat": "earrings",
+   "photos": [
+    "N170",
+    "N171",
+    "N174",
+    "N195",
+    "N196",
+    "N197"
+   ]
+  },
+  {
+   "id": "N211",
+   "cat": "earrings",
+   "photos": [
+    "N211",
+    "N210",
+    "N212"
+   ]
+  },
+  {
+   "id": "N215",
+   "cat": "earrings",
+   "photos": [
+    "N215",
+    "N216"
+   ]
+  },
+  {
+   "id": "N217",
+   "cat": "earrings",
+   "photos": [
+    "N217"
+   ]
+  },
+  {
+   "id": "N222",
+   "cat": "earrings",
+   "photos": [
+    "N222",
+    "N223"
+   ]
+  },
+  {
+   "id": "N026",
+   "cat": "necklaces",
+   "photos": [
+    "N026"
+   ]
+  },
+  {
+   "id": "N027",
+   "cat": "necklaces",
+   "photos": [
+    "N027"
+   ]
+  },
+  {
+   "id": "N028",
+   "cat": "necklaces",
+   "photos": [
+    "N028"
+   ]
+  },
+  {
+   "id": "N029",
+   "cat": "necklaces",
+   "photos": [
+    "N029"
+   ]
+  },
+  {
+   "id": "N046",
+   "cat": "necklaces",
+   "photos": [
+    "N046",
+    "N047",
+    "N050"
+   ]
+  },
+  {
+   "id": "N048",
+   "cat": "necklaces",
+   "photos": [
+    "N048"
+   ]
+  },
+  {
+   "id": "N049",
+   "cat": "necklaces",
+   "photos": [
+    "N049",
+    "N051"
+   ]
+  },
+  {
+   "id": "N052",
+   "cat": "necklaces",
+   "photos": [
+    "N052",
+    "N056",
+    "N064"
+   ]
+  },
+  {
+   "id": "N053",
+   "cat": "necklaces",
+   "photos": [
+    "N053"
+   ]
+  },
+  {
+   "id": "N054",
+   "cat": "necklaces",
+   "photos": [
+    "N054"
+   ]
+  },
+  {
+   "id": "N055",
+   "cat": "necklaces",
+   "photos": [
+    "N055",
+    "N057",
+    "N059"
+   ]
+  },
+  {
+   "id": "N058",
+   "cat": "necklaces",
+   "photos": [
+    "N058"
+   ]
+  },
+  {
+   "id": "N060",
+   "cat": "necklaces",
+   "photos": [
+    "N060",
+    "N063"
+   ]
+  },
+  {
+   "id": "N061",
+   "cat": "necklaces",
+   "photos": [
+    "N061",
+    "N062"
+   ]
+  },
+  {
+   "id": "N065",
+   "cat": "necklaces",
+   "photos": [
+    "N065",
+    "N094"
+   ]
+  },
+  {
+   "id": "N066",
+   "cat": "necklaces",
+   "photos": [
+    "N066",
+    "N070"
+   ]
+  },
+  {
+   "id": "N067",
+   "cat": "necklaces",
+   "photos": [
+    "N067",
+    "N068"
+   ]
+  },
+  {
+   "id": "N069",
+   "cat": "necklaces",
+   "photos": [
+    "N069"
+   ]
+  },
+  {
+   "id": "N071",
+   "cat": "necklaces",
+   "photos": [
+    "N071",
+    "N072"
+   ]
+  },
+  {
+   "id": "N073",
+   "cat": "necklaces",
+   "photos": [
+    "N073"
+   ]
+  },
+  {
+   "id": "N074",
+   "cat": "necklaces",
+   "photos": [
+    "N074",
+    "N075"
+   ]
+  },
+  {
+   "id": "N076",
+   "cat": "necklaces",
+   "photos": [
+    "N076"
+   ]
+  },
+  {
+   "id": "N077",
+   "cat": "necklaces",
+   "photos": [
+    "N077",
+    "N079"
+   ]
+  },
+  {
+   "id": "N078",
+   "cat": "necklaces",
+   "photos": [
+    "N078"
+   ]
+  },
+  {
+   "id": "N080",
+   "cat": "necklaces",
+   "photos": [
+    "N080"
+   ]
+  },
+  {
+   "id": "N081",
+   "cat": "necklaces",
+   "photos": [
+    "N081"
+   ]
+  },
+  {
+   "id": "N082",
+   "cat": "necklaces",
+   "photos": [
+    "N082"
+   ]
+  },
+  {
+   "id": "N083",
+   "cat": "necklaces",
+   "photos": [
+    "N083"
+   ]
+  },
+  {
+   "id": "N084",
+   "cat": "necklaces",
+   "photos": [
+    "N084"
+   ]
+  },
+  {
+   "id": "N085",
+   "cat": "necklaces",
+   "photos": [
+    "N085"
+   ]
+  },
+  {
+   "id": "N086",
+   "cat": "necklaces",
+   "photos": [
+    "N086"
+   ]
+  },
+  {
+   "id": "N087",
+   "cat": "necklaces",
+   "photos": [
+    "N087"
+   ]
+  },
+  {
+   "id": "N088",
+   "cat": "necklaces",
+   "photos": [
+    "N088"
+   ]
+  },
+  {
+   "id": "N089",
+   "cat": "necklaces",
+   "photos": [
+    "N089"
+   ]
+  },
+  {
+   "id": "N090",
+   "cat": "necklaces",
+   "photos": [
+    "N090"
+   ]
+  },
+  {
+   "id": "N091",
+   "cat": "necklaces",
+   "photos": [
+    "N091"
+   ]
+  },
+  {
+   "id": "N092",
+   "cat": "necklaces",
+   "photos": [
+    "N092"
+   ],
+   "note": "Steel + copper"
+  },
+  {
+   "id": "N093",
+   "cat": "necklaces",
+   "photos": [
+    "N093"
+   ]
+  },
+  {
+   "id": "N095",
+   "cat": "necklaces",
+   "photos": [
+    "N095"
+   ]
+  },
+  {
+   "id": "N096",
+   "cat": "necklaces",
+   "photos": [
+    "N096"
+   ]
+  },
+  {
+   "id": "N097",
+   "cat": "necklaces",
+   "photos": [
+    "N097"
+   ]
+  },
+  {
+   "id": "N098",
+   "cat": "necklaces",
+   "photos": [
+    "N098"
+   ]
+  },
+  {
+   "id": "N099",
+   "cat": "necklaces",
+   "photos": [
+    "N099"
+   ]
+  },
+  {
+   "id": "N100",
+   "cat": "necklaces",
+   "photos": [
+    "N100"
+   ]
+  },
+  {
+   "id": "N101",
+   "cat": "necklaces",
+   "photos": [
+    "N101"
+   ]
+  },
+  {
+   "id": "N102",
+   "cat": "necklaces",
+   "photos": [
+    "N102"
+   ]
+  },
+  {
+   "id": "N103",
+   "cat": "necklaces",
+   "photos": [
+    "N103"
+   ],
+   "note": "Disney character"
+  },
+  {
+   "id": "N104",
+   "cat": "necklaces",
+   "photos": [
+    "N104"
+   ]
+  },
+  {
+   "id": "N105",
+   "cat": "necklaces",
+   "photos": [
+    "N105"
+   ]
+  },
+  {
+   "id": "N106",
+   "cat": "necklaces",
+   "photos": [
+    "N106"
+   ]
+  },
+  {
+   "id": "N107",
+   "cat": "necklaces",
+   "photos": [
+    "N107"
+   ]
+  },
+  {
+   "id": "N109",
+   "cat": "necklaces",
+   "photos": [
+    "N109"
+   ]
+  },
+  {
+   "id": "N140",
+   "cat": "necklaces",
+   "photos": [
+    "N140",
+    "N141",
+    "N142"
+   ]
+  },
+  {
+   "id": "N143",
+   "cat": "necklaces",
+   "photos": [
+    "N143"
+   ]
+  },
+  {
+   "id": "N162",
+   "cat": "necklaces",
+   "photos": [
+    "N162",
+    "N164",
+    "N165",
+    "N166"
+   ],
+   "note": "Tulip pendant, several colours"
+  },
+  {
+   "id": "N190",
+   "cat": "necklaces",
+   "photos": [
+    "N190",
+    "N191",
+    "N192",
+    "N193",
+    "N194",
+    "N254"
+   ]
+  },
+  {
+   "id": "N221",
+   "cat": "necklaces",
+   "photos": [
+    "N221"
+   ]
+  },
+  {
+   "id": "N237",
+   "cat": "necklaces",
+   "photos": [
+    "N237"
+   ]
+  },
+  {
+   "id": "N247",
+   "cat": "necklaces",
+   "photos": [
+    "N247",
+    "N248"
+   ]
+  },
+  {
+   "id": "N256",
+   "cat": "necklaces",
+   "photos": [
+    "N256"
+   ]
+  },
+  {
+   "id": "N030",
+   "cat": "anklets",
+   "photos": [
+    "N030"
+   ]
+  },
+  {
+   "id": "N031",
+   "cat": "anklets",
+   "photos": [
+    "N031"
+   ]
+  },
+  {
+   "id": "N032",
+   "cat": "anklets",
+   "photos": [
+    "N032"
+   ]
+  },
+  {
+   "id": "N137",
+   "cat": "anklets",
+   "photos": [
+    "N137",
+    "N138"
+   ]
+  },
+  {
+   "id": "N147",
+   "cat": "anklets",
+   "photos": [
+    "N147"
+   ]
+  },
+  {
+   "id": "N180",
+   "cat": "anklets",
+   "photos": [
+    "N180",
+    "N253"
+   ]
+  },
+  {
+   "id": "N181",
+   "cat": "anklets",
+   "photos": [
+    "N181",
+    "N246"
+   ]
+  },
+  {
+   "id": "N182",
+   "cat": "anklets",
+   "photos": [
+    "N182"
+   ]
+  },
+  {
+   "id": "N184",
+   "cat": "anklets",
+   "photos": [
+    "N184"
+   ]
+  },
+  {
+   "id": "N185",
+   "cat": "anklets",
+   "photos": [
+    "N185"
+   ],
+   "note": "Chanel logos"
+  },
+  {
+   "id": "N186",
+   "cat": "anklets",
+   "photos": [
+    "N186"
+   ]
+  },
+  {
+   "id": "N187",
+   "cat": "anklets",
+   "photos": [
+    "N187",
+    "N188",
+    "N189"
+   ],
+   "note": "Tray of several anklet designs"
+  },
+  {
+   "id": "N233",
+   "cat": "anklets",
+   "photos": [
+    "N233",
+    "N236"
+   ]
+  },
+  {
+   "id": "N243",
+   "cat": "anklets",
+   "photos": [
+    "N243"
+   ]
+  },
+  {
+   "id": "N144",
+   "cat": "handchains",
+   "photos": [
+    "N144",
+    "N146"
+   ]
+  },
+  {
+   "id": "N148",
+   "cat": "handchains",
+   "photos": [
+    "N148"
+   ]
+  },
+  {
+   "id": "N149",
+   "cat": "handchains",
+   "photos": [
+    "N149",
+    "N150"
+   ]
+  },
+  {
+   "id": "N151",
+   "cat": "handchains",
+   "photos": [
+    "N151"
+   ]
+  },
+  {
+   "id": "N153",
+   "cat": "handchains",
+   "photos": [
+    "N153"
+   ]
+  },
+  {
+   "id": "N155",
+   "cat": "handchains",
+   "photos": [
+    "N155",
+    "N156",
+    "N158"
+   ]
+  },
+  {
+   "id": "N163",
+   "cat": "handchains",
+   "photos": [
+    "N163",
+    "N159",
+    "N161"
+   ]
+  },
+  {
+   "id": "N230",
+   "cat": "handchains",
+   "photos": [
+    "N230"
+   ]
+  },
+  {
+   "id": "N231",
+   "cat": "handchains",
+   "photos": [
+    "N231",
+    "N225",
+    "N229"
+   ]
+  }
+ ],
+ "setAside": []
+}
